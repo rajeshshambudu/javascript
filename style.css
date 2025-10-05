@@ -153,3 +153,69 @@ footer {
   border: none;
   border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .grid,
+  .team-grid,
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery img,
+  .member img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  form,
+  .quote-calculator {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+#careers {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+#careers form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+#careers input,
+#careers select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#careers button {
+  padding: 0.7rem;
+  background-color: #024D87;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
