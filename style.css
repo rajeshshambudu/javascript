@@ -1,28 +1,28 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
   color: #333;
 }
 
 header {
-  background-color: #333;
+  background-color: #024D87;
   color: #fff;
-  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
 }
 
-header h1 {
-  margin: 0;
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 nav a {
@@ -31,80 +31,49 @@ nav a {
 }
 
 .hero {
-  background: url('https://images.unsplash.com/photo-1581091870620-1e7b1c5f3b6e') no-repeat center center/cover;
+  background: linear-gradient(to right, #3CC4DA, #8BBCE2);
   color: #fff;
-  padding: 4rem 2rem;
   text-align: center;
+  padding: 4rem 2rem;
 }
 
 .btn {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #ff9900;
+  padding: 0.7rem 1.5rem;
+  background-color: #024D87;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
 }
 
-#services {
+section {
   padding: 2rem;
-  background-color: #fff;
 }
 
-.service-list {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.gallery {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
-}
-
-.service {
-  background-color: #eee;
-  padding: 1rem;
-  border-radius: 5px;
-  flex: 1;
-  min-width: 250px;
-}
-
-#contact {
-  padding: 2rem;
-  background-color: #ddd;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #333;
-  color: #fff;
-}
-
-#gallery {
-  padding: 2rem;
-  background-color: #fff;
-  text-align: center;
+  justify-content: center;
 }
 
 .gallery img {
-  margin: 1rem;
   border-radius: 5px;
   width: 300px;
   height: 200px;
   object-fit: cover;
 }
 
-#testimonials {
-  padding: 2rem;
-  background-color: #f9f9f9;
-}
-
-.testimonial {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  background-color: #eee;
-  border-left: 5px solid #ff9900;
-}
-
-#contact form {
+form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -112,18 +81,24 @@ footer {
   margin: auto;
 }
 
-#contact input,
-#contact textarea {
+input, textarea {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-#contact button {
+button {
   padding: 0.7rem;
-  background-color: #ff9900;
+  background-color: #024D87;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #024D87;
+  color: #fff;
 }
