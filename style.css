@@ -1,28 +1,25 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f4f4f4;
   color: #333;
 }
 
 header {
   background-color: #024D87;
   color: #fff;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  flex-wrap: wrap;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
+  padding: 0;
 }
 
 nav a {
@@ -30,7 +27,7 @@ nav a {
   text-decoration: none;
 }
 
-.hero {
+#hero {
   background: linear-gradient(to right, #3CC4DA, #8BBCE2);
   color: #fff;
   text-align: center;
@@ -51,26 +48,8 @@ section {
   padding: 2rem;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  list-style: none;
-  padding: 0;
-}
-
-.gallery {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.gallery img {
-  border-radius: 5px;
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
+ul {
+  padding-left: 1rem;
 }
 
 form {
@@ -103,119 +82,18 @@ footer {
   color: #fff;
 }
 
-.map {
-  margin-top: 2rem;
-}
-
-#team {
-  padding: 2rem;
-  background-color: #fff;
-  text-align: center;
-}
-
-.team-grid {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.member img {
-  border-radius: 50%;
-}
-
-.member h3 {
-  margin: 0.5rem 0 0.2rem;
-}
-
-.quote-calculator {
-  margin-top: 2rem;
-  background-color: #eee;
-  padding: 1rem;
-  border-radius: 5px;
-}
-
-.quote-calculator label {
-  display: block;
-  margin: 0.5rem 0;
-}
-
-.quote-calculator input {
-  padding: 0.3rem;
-  margin-left: 0.5rem;
-}
-
-.quote-calculator button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #024D87;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-}
-
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   nav ul {
     flex-direction: column;
     gap: 0.5rem;
-    margin-top: 1rem;
   }
 
-  .hero {
+  #hero {
     padding: 2rem 1rem;
   }
 
-  .grid,
-  .team-grid,
-  .gallery {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .gallery img,
-  .member img {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  form,
-  .quote-calculator {
+  form {
     width: 100%;
     padding: 0 1rem;
   }
 }
-
-#careers {
-  padding: 2rem;
-  background-color: #fff;
-}
-
-#careers form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 500px;
-  margin: auto;
-}
-
-#careers input,
-#careers select {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-#careers button {
-  padding: 0.7rem;
-  background-color: #024D87;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
