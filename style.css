@@ -102,3 +102,54 @@ footer {
   background-color: #024D87;
   color: #fff;
 }
+
+.map {
+  margin-top: 2rem;
+}
+
+#team {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.team-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.member img {
+  border-radius: 50%;
+}
+
+.member h3 {
+  margin: 0.5rem 0 0.2rem;
+}
+
+.quote-calculator {
+  margin-top: 2rem;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.quote-calculator label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.quote-calculator input {
+  padding: 0.3rem;
+  margin-left: 0.5rem;
+}
+
+.quote-calculator button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #024D87;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
